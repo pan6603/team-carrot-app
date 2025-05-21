@@ -32,8 +32,30 @@ const InnerHeaderNav = styled.div`
     max-width: 460px;
     width: 100%;
     height: 20px;
-    background-color: blue;
 `
+
+const InnerHeaderNavUl = styled.div`
+    max-width: 460px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+const NavItemLink = styled.a`
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    
+    &:hover {
+        color: gray;
+        cursor: pointer;
+    }
+`
+
+
 
 
 
@@ -61,7 +83,15 @@ function Header() {
                 </CarrotLogoSvg>
             </CarrotLogoLink>
 
-            <InnerHeaderNav></InnerHeaderNav>
+            <InnerHeaderNav>
+                <InnerHeaderNavUl>
+                    <NavItemLink>회사소개</NavItemLink>
+                    <NavItemLink>팀문화</NavItemLink>
+                    <NavItemLink>서비스</NavItemLink>
+                    <NavItemLink>블로그</NavItemLink>
+                    <NavItemLink>채용공고</NavItemLink>
+                </InnerHeaderNavUl>
+            </InnerHeaderNav>
         </CarrotInnerHeader>
     </CarrotHeader>
   )
