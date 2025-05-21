@@ -5,6 +5,7 @@ const CarrotHeader = styled.header`
     width: 100%;
     height: 68px;
     background-color: #fff;
+    z-index: 3000;
 `;
 
 const CarrotInnerHeader = styled.div`
@@ -20,12 +21,14 @@ const CarrotLogoLink = styled.a`
     max-width: 64px;
     width: 100%;
     height: 36px;
+    cursor: pointer;
 `
 
 const CarrotLogoSvg = styled.svg`
     max-width: 64px;
     width: 100%;
     height: 36px;
+    cursor: pointer;
 `
 
 const InnerHeaderNav = styled.div`
@@ -54,10 +57,6 @@ const NavItemLink = styled.a`
         cursor: pointer;
     }
 `
-
-
-
-
 
 function Header() {
   return (
