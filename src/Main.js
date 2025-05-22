@@ -113,6 +113,42 @@ const CarouselContainer = styled.section`
     margin: 6.25rem auto;
 `
 
+const CarouselWrapper = styled.div`
+    max-width: 1128px;
+    width: 100%;
+    height: 532px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+`
+
+const CarouselContentLink = styled.a`
+    max-width: 544px;
+    width: 100%;
+    height: 512px;
+`
+
+const CarouselContentTop = styled.figure`
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+    max-width: 544px;
+    width: 100%;
+    height: 304px;
+    background-color: red; 
+    margin: 0 auto;
+`
+
+const CarouselContentBottom = styled.figure`
+    border-bottom-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+    max-width: 544px;
+    width: 100%;
+    height: 206px;
+    background-color: green; 
+    margin: 0 auto;
+` 
 
 
 
@@ -144,7 +180,24 @@ function Main() {
                 </WorkPhilosophy>
 
                 <CarouselContainer>
-
+                    <CarouselWrapper>
+                        <CarouselContentLink>
+                            <CarouselContentTop></CarouselContentTop>
+                            <CarouselContentBottom></CarouselContentBottom>
+                        </CarouselContentLink>
+                        <CarouselContentLink>
+                            <CarouselContentTop></CarouselContentTop>
+                            <CarouselContentBottom></CarouselContentBottom>
+                        </CarouselContentLink>
+                        {/* <CarouselContentLink>
+                            <CarouselContentTop></CarouselContentTop>
+                            <CarouselContentBottom></CarouselContentBottom>
+                        </CarouselContentLink>
+                        <CarouselContentLink>
+                            <CarouselContentTop></CarouselContentTop>
+                            <CarouselContentBottom></CarouselContentBottom>
+                        </CarouselContentLink> */}
+                    </CarouselWrapper>
                 </CarouselContainer>
 
             </MainInnerContent>
