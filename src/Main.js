@@ -112,6 +112,11 @@ const CarouselContainer = styled.section`
     height: 600px;
     background-color: blue;
     margin: 6.25rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 `
 
 const CarouselLeftbutton = styled.button`
@@ -182,7 +187,7 @@ const CarouselRightbuttonSpanSvg = styled.svg`
 
 
 const CarouselWrapper = styled.div`
-    max-width: 1128px;
+    max-width: 1152px;
     width: 100%;
     height: 532px;
     margin: 0 auto;
@@ -190,6 +195,28 @@ const CarouselWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     background-color: yellow;
+`
+
+const SlideIndicator = styled.div`
+    max-width: 1152px;
+    width: 100%;
+    height: 12px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+`	
+
+const SlideIndicatorButton = styled.button`
+    max-width: 12px;
+    width: 100%;
+    height: 12px;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #212124;
+    padding: 0;
+    cursor: pointer;
 `
 
 const CarouselContentLink = styled.a`
@@ -294,6 +321,13 @@ function Main() {
                             </CarouselRightbuttonSpanSvg>
                         </CarouselRightbuttonSpan>
                     </CarouselRightbutton>
+
+                    <SlideIndicator>
+                        <SlideIndicatorButton />
+                        <SlideIndicatorButton />
+                        <SlideIndicatorButton />
+                    </SlideIndicator>
+
                 </CarouselContainer>
 
             </MainInnerContent>
