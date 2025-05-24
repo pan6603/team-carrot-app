@@ -172,6 +172,12 @@ const BannerContentLinkSvg = styled.svg`
     display: inline-block;
 `;
 
+const CarrotStory = styled.section`
+    max-width: 1440px;
+    width: 100%;
+    height: 571px;
+    background-color: blue;
+`
 
 
 function Main() {
@@ -202,6 +208,10 @@ function Main() {
                 </WorkPhilosophy>
 
                 <CarouselContent />
+
+                <CarrotStory>
+
+                </CarrotStory>
 
                 <JobPostingLink>
                     <BannerImage
