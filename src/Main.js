@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CarouselContent from './components/CarouselContent';
+import carrotImage from './img/carrotstoryimage.png'
 
 const MainContainer = styled.main`
     max-width: 1440px;
@@ -172,6 +173,25 @@ const BannerContentLinkSvg = styled.svg`
     display: inline-block;
 `;
 
+const CarrotStoryImage = styled.section`
+    max-width: 1440px;
+    width: 100%;
+    height: 450px;
+`
+
+const CarrotStoryImageWrapper = styled.div`
+    max-width: 1440px;
+    width: 100%;
+    height: 450px;
+`
+
+const CarrotStoryImageWrapperImage = styled.img`
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+`
+
+
 const CarrotStory = styled.section`
     max-width: 1440px;
     width: 100%;
@@ -209,9 +229,13 @@ function Main() {
 
                 <CarouselContent />
 
-                <CarrotStory>
+                <CarrotStoryImage>
+                    <CarrotStoryImageWrapper>
+                        <CarrotStoryImageWrapperImage src={carrotImage} />
+                    </CarrotStoryImageWrapper>
+                </CarrotStoryImage>
 
-                </CarrotStory>
+                <CarrotStory></CarrotStory>
 
                 <JobPostingLink>
                     <BannerImage
