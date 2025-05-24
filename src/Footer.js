@@ -5,7 +5,7 @@ const FooterContainer = styled.footer`
     padding-bottom: 6rem;
     max-width: 1440px;
     width: 100%;
-    height: 285px;
+    height: 185px;
     border-top: 1px solid #f2f3f6;
     margin: 0 auto;
 `
