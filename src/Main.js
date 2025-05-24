@@ -106,6 +106,71 @@ const UserDrivenText = styled.p`
     color: #5C5F69;
 `
 
+const JobPostingLink = styled.section`
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    height: 260px;
+    background-color: lightgray;
+    margin-bottom: -10rem;
+`
+
+const BannerImage = styled.img`
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+`;
+
+const BannerContent = styled.div`
+    max-width: 1440px;
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
+
+const BannerContentFlex = styled.div`
+    max-width: 417px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+const BannerContentTitle = styled.h3`
+    font-size: 2.625rem;
+    margin-bottom: 0.75rem;
+`
+const BannerContentLink = styled.a`
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+     &:hover {
+        color: gray;
+        cursor: pointer;
+    }
+
+`
+
+const BannerContentLinkText = styled.p`
+
+`
+
+const BannerContentLinkSvg = styled.svg`
+    max-width: 34px;
+    width: 100%;
+    height: 34px;
+    color: currentColor;
+    display: inline-block;
+`;
 
 
 
@@ -137,6 +202,36 @@ function Main() {
                 </WorkPhilosophy>
 
                 <CarouselContent />
+
+                <JobPostingLink>
+                    <BannerImage
+                        src="https://about.daangn.com/static/820a2f87e787ba3ed97b1c153abf81f1/3069d/jobs_banner.avif"
+                        alt="이미지_채용배너"
+                        sizes="100vw"
+                        decoding="async"
+                        loading="lazy"
+                    />
+                    
+                    <BannerContent> 
+                        <BannerContentFlex>
+                            <BannerContentTitle>당근과 함께 성장해보세요</BannerContentTitle>
+
+                            <BannerContentLink href='https://about.daangn.com/jobs/'>
+                                <BannerContentLinkText>채용공고 보러 가기</BannerContentLinkText>
+                                
+                                <BannerContentLinkSvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 34"aria-hidden="true">
+                                    <circle cx="17" cy="17" r="15.5" stroke="currentColor" />
+                                    <path
+                                        fill="currentColor"
+                                        fillRule="evenodd"
+                                        clipRule="evenodd"
+                                        d="M16.884 11.035a.8.8 0 0 1 1.132 0l5.4 5.4a.8.8 0 0 1 0 1.13l-5.4 5.4a.8.8 0 0 1-1.131-1.13l4.034-4.035H10.7a.8.8 0 0 1 0-1.6H20.92l-4.035-4.034a.8.8 0 0 1 0-1.131Z"
+                                    />
+                                </BannerContentLinkSvg>
+                            </BannerContentLink>
+                        </BannerContentFlex>
+                    </BannerContent>
+                </JobPostingLink>
 
             </MainInnerContent>
         </MainContainer>
