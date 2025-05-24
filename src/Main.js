@@ -5,7 +5,7 @@ const MainContainer = styled.main`
     max-width: 1440px;
     width: 100%;
     height: 4281px;
-    margin-top: 6.25rem;
+    padding-top: 120px;
 `
 
 const MainInnerTitle = styled.div`

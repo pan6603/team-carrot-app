@@ -6,6 +6,7 @@ const CarrotHeader = styled.header`
     height: 68px;
     background-color: #fff;
     z-index: 3000;
+    position: fixed;
 `;
 
 const CarrotInnerHeader = styled.div`
