@@ -199,6 +199,14 @@ const CarrotStory = styled.section`
     background-color: blue;
 `
 
+const WorkCulture = styled.section`
+    max-width: 1200px;
+    width: 100%;
+    height: 417px;
+    background-color: orange;
+    margin: 0px auto;
+`
+
 
 function Main() {
     return (
@@ -228,6 +236,8 @@ function Main() {
                 </WorkPhilosophy>
 
                 <CarouselContent />
+
+                <WorkCulture></WorkCulture>
 
                 <CarrotStoryImage>
                     <CarrotStoryImageWrapper>
