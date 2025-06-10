@@ -2,11 +2,11 @@ import styled, { keyframes } from 'styled-components';
 
 
 const fadeInUp = keyframes`
-  from {
+  0% {
     opacity: 0;
     transform: translateY(2rem);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -33,7 +33,7 @@ export const MainInnerTitleText = styled.h1`
     font-size: 3.375rem;
     font-weight: bold;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    animation: ${fadeInUp} 0.8s ease forwards;
 `
 
 export const MainInnerTitleTextBr = styled.br`
@@ -78,7 +78,10 @@ export const InnerCarrotTeamContent = styled.p`
     padding-right: 0rem;
     margin-left: 27px;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 
 
@@ -105,7 +108,10 @@ export const HowCarrotsWork = styled.span`
     line-height: 1.9375rem;
     font-weight: bold;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.6s ease forwards;
+    }
+    
 `
 
 export const UserValueFirst = styled.h2`
@@ -117,7 +123,10 @@ export const UserValueFirst = styled.h2`
     font-weight: bold;
     text-align: center;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
+    
 `
 
 export const UserDrivenText = styled.p`
@@ -129,7 +138,9 @@ export const UserDrivenText = styled.p`
     font-size: 1.125rem;
     color: #5C5F69;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 1s ease forwards;
+    }
 `
 
 export const JobPostingLink = styled.section`
@@ -170,7 +181,9 @@ export const BannerContentTitle = styled.h3`
     font-size: 2.625rem;
     margin-bottom: 0.75rem;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 export const BannerContentLink = styled.a`
     font-size: 1.25rem;
@@ -184,6 +197,10 @@ export const BannerContentLink = styled.a`
      &:hover {
         color: gray;
         cursor: pointer;
+    }
+
+     &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
     }
 
 `
@@ -264,7 +281,9 @@ export const WorkCultureTitle = styled.p`
     margin-bottom: 1.5rem;
     font-weight: bold;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 
 export const WorkCultureContent = styled.h1`
@@ -273,7 +292,9 @@ export const WorkCultureContent = styled.h1`
     font-size: 2.625rem;
     margin-bottom: 2rem;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 
 export const WorkCultureContentBr = styled.br``
@@ -287,7 +308,9 @@ export const WorkCultureLink = styled.a`
     gap: 10px;
     align-items: center;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 
 `
 
@@ -320,7 +343,9 @@ export const CarrotStoryBlogTitle = styled.h1`
     display: flex;
     justify-content: center;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 
 export const CarrotStoryBlogLink = styled.a`
@@ -328,16 +353,23 @@ export const CarrotStoryBlogLink = styled.a`
     justify-content: center;
     align-items: center;
     gap: 12px;
+   
+
 `
 
 export const CarrotStoryBlogLinkIcon = styled.svg`
     max-width: 32px;
     width: 100%;
     height: 32px;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
 export const CarrotStoryBlogLinkText = styled.p`
     font-size: 20px;
     font-weight: bold;
     opacity: 0;
-    animation: ${fadeInUp} 1s ease forwards;
+    &.visible {
+        animation: ${fadeInUp} 0.8s ease forwards;
+    }
 `
