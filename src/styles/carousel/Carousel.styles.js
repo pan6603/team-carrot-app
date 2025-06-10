@@ -80,7 +80,6 @@ export const CarouselRightbuttonSpanSvg = styled.svg`
     fill: none;
 `
 
-
 export const CarouselWrapper = styled.div`
     max-width: 1152px;
     width: 100%;
@@ -89,10 +88,9 @@ export const CarouselWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
 `
 
-export const SlideIndicator = styled.div`
+export const SliderDots = styled.div`
     max-width: 1152px;
     width: 100%;
     height: 12px;
@@ -102,7 +100,7 @@ export const SlideIndicator = styled.div`
     align-items: center;
 `	
 
-export const SlideIndicatorButton = styled.button`
+export const Dot = styled.button`
     max-width: 12px;
     width: 100%;
     height: 12px;
@@ -111,6 +109,16 @@ export const SlideIndicatorButton = styled.button`
     border: 1px solid #212124;
     padding: 0;
     cursor: pointer;
+`
+
+export const CarouselItem = styled.div`
+    max-width: 544px;
+    width: 100%;
+    height: 512px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+    border-radius: 1.875rem;
+    box-sizing: border-box;
 `
 
 export const CarouselContentLink = styled.a`
@@ -130,12 +138,39 @@ export const CarouselContentTop = styled.figure`
 `
 
 export const CarouselContentBottom = styled.figure`
-    border-bottom-right-radius: 1.875rem;
-    border-bottom-left-radius: 1.875rem;
+    border-radius: 0 0 1.875rem 1.875rem;
     max-width: 544px;
     width: 100%;
     height: 206px;
-    background-color: green; 
     margin: 0 auto;
+    background-color: #fff;
+    padding: 2.75rem 2.5rem;
+    box-sizing: border-box;
 ` 
 
+export const CarouselContentBottomTitle = styled.h3`
+    margin: 0;
+    max-width: 300px;
+    width: 100%;
+    height: 78px;
+    font-size: 1.625rem;
+    line-height: 2.4375rem;
+    font-weight: bold;
+    color: #212124;
+    
+`
+
+export const CarouselContentBottomDescription = styled.p`
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #868b94;
+`
+
+export const CarouselContentTopImg = styled.img`
+    max-width: 544px;
+    width: 100%;
+    height: 304px;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
+`

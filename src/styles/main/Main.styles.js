@@ -1,9 +1,21 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 
 export const MainContainer = styled.main`
     max-width: 1440px;
     width: 100%;
-    height: 4281px;
+    height: 4545px;
     padding-top: 120px;
 `
 
@@ -20,6 +32,8 @@ export const MainInnerTitleText = styled.h1`
     line-height: 4.5625rem;
     font-size: 3.375rem;
     font-weight: bold;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 
 export const MainInnerTitleTextBr = styled.br`
@@ -31,7 +45,9 @@ export const MainInnerContent = styled.div`
     width: 100%;
     height: 4047px;
     margin: 0 auto;
-    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 `
 
 export const InnerTextCarrotUsers = styled.section`
@@ -42,7 +58,6 @@ export const InnerTextCarrotUsers = styled.section`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-bottom: 6.5rem;
 `
 
 export const InnerTextCarrotTeamImg = styled.img`
@@ -62,13 +77,15 @@ export const InnerCarrotTeamContent = styled.p`
     padding-left: 0rem;
     padding-right: 0rem;
     margin-left: 27px;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
+
 
 export const WorkPhilosophy = styled.section`
     max-width: 664px;
     width: 100%;
     height: 196px;
-    margin-bottom: -3.75rem;
     margin: 0 auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -78,11 +95,17 @@ export const WorkPhilosophy = styled.section`
     align-items: center;
 `
 
+export const WorkPhilosophyDiv = styled.div`
+
+`
+
 export const HowCarrotsWork = styled.span`
     margin-bottom: 0;
     font-size: 1.25rem;
     line-height: 1.9375rem;
     font-weight: bold;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 
 export const UserValueFirst = styled.h2`
@@ -93,6 +116,8 @@ export const UserValueFirst = styled.h2`
     margin: 0px;
     font-weight: bold;
     text-align: center;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 
 export const UserDrivenText = styled.p`
@@ -103,6 +128,8 @@ export const UserDrivenText = styled.p`
     line-height: 1.875rem;
     font-size: 1.125rem;
     color: #5C5F69;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 
 export const JobPostingLink = styled.section`
@@ -142,6 +169,8 @@ export const BannerContentFlex = styled.div`
 export const BannerContentTitle = styled.h3`
     font-size: 2.625rem;
     margin-bottom: 0.75rem;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 export const BannerContentLink = styled.a`
     font-size: 1.25rem;
@@ -160,7 +189,8 @@ export const BannerContentLink = styled.a`
 `
 
 export const BannerContentLinkText = styled.p`
-
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `
 
 export const BannerContentLinkSvg = styled.svg`
@@ -194,13 +224,120 @@ export const CarrotStory = styled.section`
     max-width: 1440px;
     width: 100%;
     height: 571px;
-    background-color: blue;
 `
 
 export const WorkCulture = styled.section`
     max-width: 1200px;
     width: 100%;
     height: 417px;
-    background-color: orange;
     margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`
+
+export const WorkCultureTitleLeft = styled.div`
+    max-width: 556px;
+    width: 100%;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const WorkCultureImageWrapper = styled.div`
+    max-width: 556px;
+    width: 100%;
+    height: 417px;
+`
+
+export const WorkCultureImage = styled.img`
+    max-width: 556px;
+    width: 100%;
+    height: 417px;
+`
+
+export const WorkCultureTitle = styled.p`
+    max-width: 556px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
+`
+
+export const WorkCultureContent = styled.h1`
+    max-width: 556px;
+    width: 100%;
+    font-size: 2.625rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
+`
+
+export const WorkCultureContentBr = styled.br``
+
+
+export const WorkCultureLink = styled.a`
+    max-width: 556px;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
+
+`
+
+export const WorkCultureLinkSvg = styled.svg`
+    max-width: 32px;
+    width: 100%;
+    height: 32px;
+`
+
+export const CarrotStoryBlog = styled.div`
+    max-width: 1440px;
+    width: 100%;
+    height: 171px;
+`
+
+export const CarrotStoryBlogSlideView = styled.div`
+    max-width: 3892px;
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`
+
+export const CarrotStoryBlogTitle = styled.h1`
+    font-size: 2.625rem;
+    line-height: 3.5625rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
+`
+
+export const CarrotStoryBlogLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+`
+
+export const CarrotStoryBlogLinkIcon = styled.svg`
+    max-width: 32px;
+    width: 100%;
+    height: 32px;
+`
+export const CarrotStoryBlogLinkText = styled.p`
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    animation: ${fadeInUp} 1s ease forwards;
 `

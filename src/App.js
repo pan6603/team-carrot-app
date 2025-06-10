@@ -7,11 +7,13 @@ import Culture from "./pages/culture/culture";
 import Service from "./pages/service/service";
 import Blog from "./pages/blog/blog";
 import Jobs from "./pages/jobs/jobs";
+// import GlobalStyle from './styles/GlobalStyles'; 
 
 
 function App() {
   return (
     <>
+      {/* <GlobalStyle /> */}
       <Header />
           <Router>
               <Routes>

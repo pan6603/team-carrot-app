@@ -1,33 +1,67 @@
+// import React, { useEffect, useRef, useState } from 'react';
 import CarouselContent from './components/carousel/Carousel';
 import carrotImage from './img/carrotstoryimage.png'
+// import { useInView } from 'react-intersection-observer';
+import {
+    MainContainer,
+    MainInnerTitle,
+    MainInnerTitleText,
+    MainInnerTitleTextBr,
+    MainInnerContent,
+    InnerTextCarrotUsers,
+    InnerTextCarrotTeamImg,
+    InnerCarrotTeamContent,
+    WorkPhilosophy,
+    HowCarrotsWork,
+    UserValueFirst,
+    UserDrivenText,
+    JobPostingLink,
+    BannerImage, 
+    BannerContent, 
+    BannerContentFlex, 
+    BannerContentTitle, 
+    BannerContentLink, 
+    BannerContentLinkText, 
+    BannerContentLinkSvg, 
+    CarrotStoryImage, 
+    CarrotStoryImageWrapper, 
+    CarrotStoryImageWrapperImage,
+    CarrotStory,
+    WorkCulture,
+    WorkCultureTitleLeft, 
+    WorkCultureImageWrapper, 
+    WorkCultureImage, 
+    WorkCultureTitle, 
+    WorkCultureContent, 
+    WorkCultureLink, 
+    WorkCultureLinkSvg, 
+    WorkCultureContentBr, 
+    WorkPhilosophyDiv, 
+    CarrotStoryBlog, 
+    CarrotStoryBlogSlideView, 
+    CarrotStoryBlogTitle, 
+    CarrotStoryBlogLink, 
+    CarrotStoryBlogLinkIcon, 
+    CarrotStoryBlogLinkText 
+    } from './styles/main/Main.styles';
 
-import { MainContainer } from './styles/main/Main.styles';
-import { MainInnerTitle } from './styles/main/Main.styles';
-import { MainInnerTitleText } from './styles/main/Main.styles';
-import { MainInnerTitleTextBr } from './styles/main/Main.styles';
-import { MainInnerContent } from './styles/main/Main.styles';
-import { InnerTextCarrotUsers } from './styles/main/Main.styles';
-import { InnerTextCarrotTeamImg } from './styles/main/Main.styles';
-import { InnerCarrotTeamContent } from './styles/main/Main.styles';
-import { WorkPhilosophy } from './styles/main/Main.styles';
-import { HowCarrotsWork } from './styles/main/Main.styles';
-import { UserValueFirst } from './styles/main/Main.styles';
-import { UserDrivenText } from './styles/main/Main.styles';
-import { JobPostingLink } from './styles/main/Main.styles';
-import { BannerImage } from './styles/main/Main.styles';
-import { BannerContent } from './styles/main/Main.styles';
-import { BannerContentFlex } from './styles/main/Main.styles';
-import { BannerContentTitle } from './styles/main/Main.styles';
-import { BannerContentLink } from './styles/main/Main.styles';
-import { BannerContentLinkText } from './styles/main/Main.styles';
-import { BannerContentLinkSvg } from './styles/main/Main.styles';
-import { CarrotStoryImage } from './styles/main/Main.styles';
-import { CarrotStoryImageWrapper } from './styles/main/Main.styles';
-import { CarrotStoryImageWrapperImage } from './styles/main/Main.styles';
-import { CarrotStory } from './styles/main/Main.styles';
-import { WorkCulture } from './styles/main/Main.styles';
 
 function Main() {
+    // const ref = useRef(null);
+    // const [isVisible, setIsVisible] = useState(false);
+
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(([entry]) => {
+    //       if (entry.isIntersecting) {
+    //         setIsVisible(true);
+    //         observer.disconnect(); // 한 번만 보여주기
+    //       }
+    //     });
+    
+    //     if (ref.current) observer.observe(ref.current);
+    //     return () => observer.disconnect();
+    // }, []);
+   
     return (
         <MainContainer>
             <MainInnerTitle>
@@ -46,17 +80,51 @@ function Main() {
                     </InnerCarrotTeamContent>
                 </InnerTextCarrotUsers>
 
-                <WorkPhilosophy>
-                    <HowCarrotsWork>당근이 일하는 방식</HowCarrotsWork>
-                    <UserValueFirst>사용자 가치를 가장 중요하게 생각해요</UserValueFirst>
-                    <UserDrivenText>
-                        좋은 서비스에 대한 답은 항상 사용자에게 있어요. 오래 고민하는 대신 빠르게 실험하며 사용자를 위한 서비스를 만들어요.
-                    </UserDrivenText>
-                </WorkPhilosophy>
+                <WorkPhilosophyDiv>
+                    <WorkPhilosophy>
+                        <HowCarrotsWork>당근이 일하는 방식</HowCarrotsWork>
+                        <UserValueFirst>사용자 가치를 가장 중요하게 생각해요</UserValueFirst>
+                        <UserDrivenText>
+                            좋은 서비스에 대한 답은 항상 사용자에게 있어요. 오래 고민하는 대신 빠르게 실험하며 사용자를 위한 서비스를 만들어요.
+                        </UserDrivenText>
+                    </WorkPhilosophy>
 
-                <CarouselContent />
+                    <CarouselContent />
+                </WorkPhilosophyDiv>
+             
 
-                <WorkCulture></WorkCulture>
+                <WorkCulture>
+                    <WorkCultureTitleLeft>
+                        <WorkCultureTitle>당근이 일하는 문화</WorkCultureTitle>
+                        <WorkCultureContent>함께의 가치를 만드는 사람들은 <WorkCultureContentBr />어떤 문화에서 일할까요?</WorkCultureContent>
+                        <WorkCultureLink>
+                            자세히 보기 
+                            <WorkCultureLinkSvg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 34 34">
+                                    <circle
+                                    cx="17"
+                                    cy="17"
+                                    r="15.5"
+                                    stroke="currentColor"
+                                    />
+                                    
+                                    <path
+                                    fill="currentColor"
+                                    fillRule="evenodd"
+                                    d="M16.884 11.035a.8.8 0 0 1 1.132 0l5.4 5.4a.8.8 0 0 1 0 1.13l-5.4 5.4a.8.8 0 0 1-1.131-1.13l4.034-4.035H10.7a.8.8 0 0 1 0-1.6H20.92l-4.035-4.034a.8.8 0 0 1 0-1.131Z"
+                                    clipRule="evenodd"
+                                    />
+                            </WorkCultureLinkSvg>
+
+                         
+                        </WorkCultureLink>
+                    </WorkCultureTitleLeft>
+                    <WorkCultureImageWrapper>
+                        <WorkCultureImage src='https://about.daangn.com/static/f908ab4f62ab752775740da5815f4596/66698/0608bdb2-2324-44ba-825f-48dd0165a92c_main_culture.avif'/>
+                    </WorkCultureImageWrapper>
+                </WorkCulture>
 
                 <CarrotStoryImage>
                     <CarrotStoryImageWrapper>
@@ -64,7 +132,34 @@ function Main() {
                     </CarrotStoryImageWrapper>
                 </CarrotStoryImage>
 
-                <CarrotStory></CarrotStory>
+                <CarrotStory>
+                    <CarrotStoryBlog>
+                        <CarrotStoryBlogTitle>당근 팀 이야기가 더 궁금하다면</CarrotStoryBlogTitle>
+                        <CarrotStoryBlogLink>
+                            <CarrotStoryBlogLinkText>블로그 글 보러가기</CarrotStoryBlogLinkText>
+                            <CarrotStoryBlogLinkIcon 
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 34 34">
+
+                                    <circle
+                                        cx="17"
+                                        cy="17"
+                                        r="15.5"
+                                        stroke="currentColor"
+                                        />
+                                        <path
+                                        fill="currentColor"
+                                        fillRule="evenodd"
+                                        d="M16.884 11.035a.8.8 0 0 1 1.132 0l5.4 5.4a.8.8 0 0 1 0 1.13l-5.4 5.4a.8.8 0 0 1-1.131-1.13l4.034-4.035H10.7a.8.8 0 0 1 0-1.6H20.92l-4.035-4.034a.8.8 0 0 1 0-1.131Z"
+                                        clipRule="evenodd"
+                                        />
+
+                            </CarrotStoryBlogLinkIcon>
+                        </CarrotStoryBlogLink>
+                    </CarrotStoryBlog>
+                    <CarrotStoryBlogSlideView></CarrotStoryBlogSlideView>
+                </CarrotStory>
 
                 <JobPostingLink>
                     <BannerImage
