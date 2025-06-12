@@ -23,14 +23,14 @@ function Footer() {
                         <NavFooterMenuItemLink>PR</NavFooterMenuItemLink>
                     </NavFooterMenuItem>
                     <NavFooterMenuSns>
-                        <NavFooterMenuSnsLink href='https://github.com/daangn'>
+                        <NavFooterMenuSnsLink href=''>
                             <StyledGithubIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 28">
                                 <path
                                 d="M13.5.604C6.046.604 0 6.802 0 14.446 0 20.56 3.868 25.75 9.233 27.58c.674.128.892-.301.892-.665v-2.577c-3.755.837-4.537-1.634-4.537-1.634-.614-1.6-1.5-2.025-1.5-2.025-1.225-.86.094-.84.094-.84 1.355.096 2.068 1.426 2.068 1.426 1.204 2.115 3.158 1.504 3.929 1.15.12-.894.47-1.505.857-1.85-2.998-.352-6.15-1.539-6.15-6.841 0-1.512.527-2.747 1.39-3.716-.14-.349-.601-1.757.132-3.663 0 0 1.134-.371 3.714 1.419 1.076-.307 2.23-.46 3.378-.466 1.148.006 2.303.16 3.382.466 2.577-1.79 3.709-1.419 3.709-1.419.735 1.907.272 3.315.133 3.663.866.97 1.389 2.205 1.389 3.716 0 5.316-3.158 6.487-6.164 6.83.484.428.926 1.27.926 2.562v3.799c0 .367.216.8.901.664C23.136 25.746 27 20.559 27 14.446 27 6.802 20.955.604 13.5.604Z"
                                 />
                             </StyledGithubIcon>
                         </NavFooterMenuSnsLink>
-                        <NavFooterMenuSnsLink href='https://medium.com/daangn'>
+                        <NavFooterMenuSnsLink href=''>
                             <StyledMediumIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
                                 <path
                                     d="M15.101 14c0 3.866-3.156 7-7.05 7C4.157 21 1 17.866 1 14s3.157-7 7.05-7c3.895 0 7.051 3.134 7.051 7ZM22.836 14c0 3.64-1.578 6.59-3.525 6.59-1.947 0-3.526-2.95-3.526-6.59 0-3.639 1.578-6.59 3.526-6.59 1.947 0 3.525 2.95 3.525 6.59ZM26 14c0 3.26-.555 5.904-1.24 5.904-.685 0-1.24-2.644-1.24-5.904s.556-5.904 1.24-5.904C25.445 8.096 26 10.74 26 14Z"
@@ -38,14 +38,14 @@ function Footer() {
                             </StyledMediumIcon>
                         </NavFooterMenuSnsLink>
 
-                        <NavFooterMenuSnsLink href='https://www.facebook.com/daangn/'>
+                        <NavFooterMenuSnsLink href=''>
                             <StyledFacebookIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
                                 <path
                                 d="M27.5 13.975C27.5 6.69 21.403.79 13.877.79 6.351.791.254 6.691.254 13.975c0 6.58 4.983 12.035 11.492 13.025v-9.217H8.282v-3.808h3.464v-2.907c0-3.304 2.034-5.127 5.146-5.127 1.49 0 3.052.258 3.052.258v3.24h-1.72c-1.689 0-2.222 1.014-2.222 2.057v2.473h3.778l-.605 3.808h-3.173v9.211c6.515-.984 11.498-6.433 11.498-13.013Z"
                                 />
                             </StyledFacebookIcon>
                         </NavFooterMenuSnsLink>
-                        <NavFooterMenuSnsLink href='https://www.instagram.com/daangnmarket/'>
+                        <NavFooterMenuSnsLink href=''>
                             <StyledInstagramIcon
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 27 27"
