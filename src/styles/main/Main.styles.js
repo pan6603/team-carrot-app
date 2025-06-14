@@ -330,11 +330,73 @@ export const CarrotStoryBlogSlideView = styled.div`
     max-width: 3892px;
     width: 100%;
     height: 400px;
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+`
+
+export const CarrotStoryBlogSlideWrapper = styled.div`
+    max-width: 3892px;
+    width: 100%;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    justify-content: space-around;
+    margin: 0;
+`
+
+export const CarrotStoryBlogSlideViewLink = styled.a`
+    max-width: 245px;
+    width: 100%;
+    height: 322px;
+`
+
+export const CarrotStoryBlogSlideViewImageWrraper = styled.div`
+    max-width: 245px;
+    width: 100%;
+    height: 322px;
+    position: relative;
+    margin: 0;
+    background-color: red;
+    object-fit: scale-down;
+    border-radius: 1.875rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
+    border-radius: 1.875rem;
+` 
+
+export const SlideViewImage = styled.img`
+    position: relative;
+    max-width: 245px;
+    width: 100%;
+    height: 322px;
+    border-radius: 1.875rem;
+`
+
+export const SlideViewImageWrraperText = styled.div`
+    max-width: 245px;
+    width: 100%;
+    height: 120px;
+    top: 205px;
+    z-index: 200;
+    position: absolute;
+    border-bottom-left-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+`
+export const SlideViewImageText = styled.p`
+    max-width: 12.5rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 300;
+    color: #fff;
 `
 
 export const CarrotStoryBlogTitle = styled.h1`

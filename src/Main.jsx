@@ -1,5 +1,7 @@
 // import React, { useEffect, useRef, useState } from 'react';
 import CarouselContent from './components/carousel/Carousel';
+import InfinitePlaybackSlider from './components/carousel/InfinitePlaybackSlider';
+
 import carrotImage from './img/carrotstoryimage.png'
 import React, { useEffect, useState, useRef } from 'react';
 import {
@@ -38,11 +40,10 @@ import {
     WorkCultureContentBr, 
     WorkPhilosophyDiv, 
     CarrotStoryBlog, 
-    CarrotStoryBlogSlideView, 
     CarrotStoryBlogTitle, 
     CarrotStoryBlogLink, 
     CarrotStoryBlogLinkIcon, 
-    CarrotStoryBlogLinkText 
+    CarrotStoryBlogLinkText
     } from './styles/main/Main.styles';
 
 
@@ -352,7 +353,9 @@ function Main() {
                             </CarrotStoryBlogLinkIcon>
                         </CarrotStoryBlogLink>
                     </CarrotStoryBlog>
-                    <CarrotStoryBlogSlideView></CarrotStoryBlogSlideView>
+
+                    <InfinitePlaybackSlider />
+
                 </CarrotStory>
 
                 <JobPostingLink>
