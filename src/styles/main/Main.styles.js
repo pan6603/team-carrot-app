@@ -341,7 +341,6 @@ export const CarrotStoryBlogSlideWrapper = styled.div`
     max-width: 3892px;
     width: 100%;
     height: 400px;
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,6 +355,7 @@ export const CarrotStoryBlogSlideViewLink = styled.a`
     max-width: 245px;
     width: 100%;
     height: 322px;
+    cursor: pointer;
 `
 
 export const CarrotStoryBlogSlideViewImageWrraper = styled.div`
@@ -364,7 +364,6 @@ export const CarrotStoryBlogSlideViewImageWrraper = styled.div`
     height: 322px;
     position: relative;
     margin: 0;
-    background-color: red;
     object-fit: scale-down;
     border-radius: 1.875rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
@@ -395,8 +394,9 @@ export const SlideViewImageText = styled.p`
     padding: 1rem 1.25rem;
     font-size: 1.25rem;
     font-weight: bold;
-    z-index: 300;
+    z-index: 500;
     color: #fff;
+
 `
 
 export const CarrotStoryBlogTitle = styled.h1`
