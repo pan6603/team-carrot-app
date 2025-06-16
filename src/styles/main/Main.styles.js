@@ -356,6 +356,11 @@ export const CarrotStoryBlogSlideViewLink = styled.a`
     width: 100%;
     height: 322px;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px); 
+    }
 `
 
 export const CarrotStoryBlogSlideViewImageWrraper = styled.div`
