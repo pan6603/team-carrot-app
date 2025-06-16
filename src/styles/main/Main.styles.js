@@ -339,8 +339,8 @@ export const CarrotStoryBlogSlideView = styled.div`
 
 export const CarrotStoryBlogSlideWrapper = styled.div`
     max-width: 3892px;
-    width: 100%;
-    height: 400px;
+    width: inherit;
+    height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,6 +349,20 @@ export const CarrotStoryBlogSlideWrapper = styled.div`
     top: 0%;
     justify-content: space-around;
     margin: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    animation: autoPlay 10s linear infinite;
+    flex-direction: row;
+
+    @keyframes autoPlay {
+        0% {
+            left: 0%;
+        }
+        100% {
+            left: -100%;
+        }
+    }
+
 `
 
 export const CarrotStoryBlogSlideViewLink = styled.a`
@@ -357,6 +371,7 @@ export const CarrotStoryBlogSlideViewLink = styled.a`
     height: 322px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    opacity: 0.99;
 
     &:hover {
         transform: translateY(-10px); 
