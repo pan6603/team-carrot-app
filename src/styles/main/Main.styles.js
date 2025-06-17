@@ -327,39 +327,61 @@ export const CarrotStoryBlog = styled.div`
 `
 
 export const CarrotStoryBlogSlideView = styled.div`
-    max-width: 3892px;
-    width: 100%;
+    width: calc(278px * 14);;
     height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
 `
 
-export const CarrotStoryBlogSlideWrapper = styled.div`
-    max-width: 3892px;
+export const CarrotStoryBlogSlideLeft = styled.div`
     width: inherit;
     height: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
-    left: 0%;
-    top: 0%;
-    justify-content: space-around;
+    left: 0;
+    top: 0;
     margin: 0;
-    overflow: hidden;
     overflow-x: scroll;
-    animation: autoPlay 10s linear infinite;
-    flex-direction: row;
+    scrollbar-width: none;
+    animation: autoPlay 60s linear infinite;
 
     @keyframes autoPlay {
         0% {
-            left: 0%;
+            transform: translateX(0);
         }
         100% {
-            left: -100%;
+            transform: translateX(calc(3892px));
+        }
+    }
+
+`
+
+export const CarrotStoryBlogSlideRight = styled.div`
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 3892px;
+    top: 0;
+    margin: 0;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    animation: autoPlay 60s linear infinite;
+
+    @keyframes autoPlay {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-3892px));
         }
     }
 
