@@ -29,6 +29,7 @@ export const CarouselLeftbutton = styled.button`
     padding: 0;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
+    overflow: hidden;
 `
 
 export const CarouselLeftbuttonSpan = styled.span`
@@ -174,3 +175,4 @@ export const CarouselContentTopImg = styled.img`
     border-top-left-radius: 1.875rem;
     border-top-right-radius: 1.875rem;
 `
+
