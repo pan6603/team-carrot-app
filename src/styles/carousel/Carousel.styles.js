@@ -7,11 +7,7 @@ export const CarouselContainer = styled.section`
     width: 100%;
     height: 600px;
     margin: 6.25rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+    background-color: blue;
 `
 
 export const CarouselLeftbutton = styled.button`
@@ -20,7 +16,7 @@ export const CarouselLeftbutton = styled.button`
     width: 100%;
     height: 24px;
     background: none;
-    right: calc(100% + 1rem);
+    right: 1210px;
     top: 12.5rem;
     transform: scaleX(-1);
     color: #212124;
@@ -54,7 +50,7 @@ export const CarouselRightbutton = styled.button`
     max-width: 24px;
     width: 100%;
     height: 24px;
-    left: calc(100% + 1rem);
+    left: 1210px;
     top: 12.5rem;
     color: #212124;
     border: none;
