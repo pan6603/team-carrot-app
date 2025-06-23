@@ -8,6 +8,11 @@ export const CarouselContainer = styled.section`
     height: 600px;
     margin: 6.25rem auto;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
 `
 
 export const CarouselLeftbutton = styled.button`
@@ -41,16 +46,15 @@ export const CarouselLeftbuttonSpanSvg = styled.svg`
     max-width: 24px;
     width: 100%;
     height: 24px;
-    fill: none;
 `
 
 
-export const CarouselRightbutton = styled.button`
+export const CarouselRightbutton = styled.div`
     position: absolute;
     max-width: 24px;
     width: 100%;
     height: 24px;
-    left: 1210px;
+    left: calc(100% + 1rem);
     top: 12.5rem;
     color: #212124;
     border: none;
@@ -77,17 +81,24 @@ export const CarouselRightbuttonSpanSvg = styled.svg`
     fill: none;
 `
 
-export const CarouselWrapper = styled.div`
+export const CarouselItemDiv = styled.div`
     max-width: 1152px;
+    width: 100%;
+ 
+`
+
+export const CarouselWrapper = styled.div`
+    max-width: 1128px;
     width: 100%;
     height: 532px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: red;
 `
 
-export const SliderDots = styled.div`
+export const SliderDotsContainer = styled.div`
     max-width: 1152px;
     width: 100%;
     height: 12px;
@@ -95,6 +106,7 @@ export const SliderDots = styled.div`
     justify-content: center;
     gap: 2rem;
     align-items: center;
+    background-color: red;
 `	
 
 export const Dot = styled.button`
@@ -108,15 +120,6 @@ export const Dot = styled.button`
     cursor: pointer;
 `
 
-export const CarouselItem = styled.div`
-    max-width: 544px;
-    width: 100%;
-    height: 512px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s ease;
-    border-radius: 1.875rem;
-    box-sizing: border-box;
-`
 
 export const CarouselContentLink = styled.a`
     max-width: 544px;

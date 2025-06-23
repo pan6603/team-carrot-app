@@ -17,6 +17,7 @@ export const MainContainer = styled.main`
     width: 100%;
     height: 4545px;
     padding-top: 120px;
+    overflow-x: hidden;
 `
 
 export const MainInnerTitle = styled.div`
@@ -347,8 +348,6 @@ export const CarrotStoryBlogSlideLeft = styled.div`
     left: 0;
     top: 0;
     margin: 0;
-    overflow-x: scroll;
-    scrollbar-width: none;
     animation: autoPlay 60s linear infinite;
 
     @keyframes autoPlay {
@@ -372,8 +371,6 @@ export const CarrotStoryBlogSlideRight = styled.div`
     left: 3892px;
     top: 0;
     margin: 0;
-    overflow-x: scroll;
-    scrollbar-width: none;
     animation: autoPlay 60s linear infinite;
 
     @keyframes autoPlay {
