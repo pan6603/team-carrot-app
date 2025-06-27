@@ -7,12 +7,12 @@ export const CarouselContainer = styled.section`
     width: 100%;
     height: 600px;
     margin: 6.25rem auto;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    background-color: blue;
 `
 
 export const CarouselLeftbutton = styled.button`
@@ -51,11 +51,11 @@ export const CarouselLeftbuttonSpanSvg = styled.svg`
 
 export const CarouselRightbutton = styled.div`
     position: absolute;
+    left: calc(100% + 1rem);
+    top: 12.5rem;
     max-width: 24px;
     width: 100%;
     height: 24px;
-    left: calc(100% + 1rem);
-    top: 12.5rem;
     color: #212124;
     border: none;
     border-radius: 999px;
