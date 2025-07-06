@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { 
     CarouselSlider,
+    StyledDotsContainer,
     CarouselItem,
     CarouselContentLink,
     CarouselContentTop,
@@ -111,15 +112,29 @@ function PrevArrow(props) {
 
 
 function CarouselContent () {
-
     const [currentSlide, setCurrentSlide] = useState(0);
-
+    console.log("currentSlide:", currentSlide);
     const settings = {
+        infinite: true,
+        speed: 330,
+        dots: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         nextArrow: <NextArrow isVisible={currentSlide === 0 || currentSlide === 2} />,
         prevArrow: <PrevArrow isVisible={currentSlide === 2 || currentSlide === 4}/>,
         beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+        appendDots: (dots) => <StyledDotsContainer>{dots}</StyledDotsContainer>,
+        customPaging: (i) => (
+            <div
+                style={{
+                    width: "12px",
+                    height: "12px",
+                    borderRadius: "50%",
+                    backgroundColor: i === Math.floor(currentSlide / settings.slidesToScroll) ? "#212124" : "#fff",
+                    cursor: "pointer",
+                }}
+            />
+        ), // 각 dot의 스타일 정
     };
     
   

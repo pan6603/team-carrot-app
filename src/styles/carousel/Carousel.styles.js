@@ -29,6 +29,30 @@ export const CarouselSlider = styled(Slider)`
 
 `    
 
+export const StyledDotsContainer = styled.ul`
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+
+    li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 1px solid #212124;
+        background: #fff;
+
+        &.slick-active {
+            background-color: #212124; // 활성 dot 색상
+        }
+    }
+`;
 
 
 // export const CarouselContainer = styled.section`
