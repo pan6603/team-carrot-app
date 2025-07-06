@@ -1,19 +1,47 @@
 import styled from 'styled-components';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
-export const CarouselContainer = styled.section`
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-    height: 600px;
-    margin: 6.25rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: blue;
-`
+export const CarouselSlider = styled(Slider)`
+    .slick-list {
+        position: relative;
+        margin: 115px auto;
+        max-width: 1173px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .slick-track {
+        display: flex !important;
+        gap: 2.5rem;
+    }
+       
+    .slick-slide {
+        width: 544px !important;
+        height: 512px;
+        border-radius: 1.875rem;
+        overflow: hidden;   
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 0px; 
+        cursor: pointer;
+    }
+
+`    
+
+
+
+// export const CarouselContainer = styled.section`
+//     position: relative;
+//     max-width: 1200px;
+//     width: 100%;
+//     height: 600px;
+//     margin: 6.25rem auto;
+//     display: flex;
+//     justify-content: space-between;
+//     box-sizing: border-box;
+//     background-color: blue;
+// `
 
 export const CarouselLeftbutton = styled.button`
     position: absolute;
@@ -21,7 +49,7 @@ export const CarouselLeftbutton = styled.button`
     width: 100%;
     height: 24px;
     background: none;
-    right: 1210px;
+    left: 85px;
     top: 12.5rem;
     transform: scaleX(-1);
     color: #212124;
@@ -31,6 +59,7 @@ export const CarouselLeftbutton = styled.button`
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
     overflow: hidden;
+    z-index: 100;
 `
 
 export const CarouselLeftbuttonSpan = styled.span`
@@ -49,9 +78,9 @@ export const CarouselLeftbuttonSpanSvg = styled.svg`
 `
 
 
-export const CarouselRightbutton = styled.div`
+export const CarouselRightbutton = styled.button`
     position: absolute;
-    left: calc(100% + 1rem);
+    right: 85px;
     top: 12.5rem;
     max-width: 24px;
     width: 100%;
@@ -63,6 +92,7 @@ export const CarouselRightbutton = styled.div`
     padding: 0;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
+    z-index: 100;
 `
 
 export const CarouselRightbuttonSpan = styled.span`
@@ -81,21 +111,12 @@ export const CarouselRightbuttonSpanSvg = styled.svg`
     fill: none;
 `
 
-export const CarouselItemDiv = styled.div`
-    max-width: 1152px;
-    width: 100%;
- 
+export const CarouselItem = styled.div`
+    box-sizing: border-box;
 `
 
 export const CarouselWrapper = styled.div`
-    max-width: 1128px;
-    width: 100%;
-    height: 532px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: red;
+    
 `
 
 export const SliderDotsContainer = styled.div`
