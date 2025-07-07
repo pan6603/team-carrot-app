@@ -17,7 +17,6 @@ export const MainContainer = styled.main`
     width: 100%;
     height: 4545px;
     padding-top: 120px;
-    overflow-x: hidden;
 `
 
 export const MainInnerTitle = styled.div`

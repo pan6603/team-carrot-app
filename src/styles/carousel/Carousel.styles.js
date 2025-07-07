@@ -55,18 +55,6 @@ export const StyledDotsContainer = styled.ul`
 `;
 
 
-// export const CarouselContainer = styled.section`
-//     position: relative;
-//     max-width: 1200px;
-//     width: 100%;
-//     height: 600px;
-//     margin: 6.25rem auto;
-//     display: flex;
-//     justify-content: space-between;
-//     box-sizing: border-box;
-//     background-color: blue;
-// `
-
 export const CarouselLeftbutton = styled.button`
     position: absolute;
     max-width: 24px;
